@@ -1,13 +1,12 @@
 version: '3.8'
 
 services:
-  react-app:
+  app:
     build: .
     ports:
       - "3000:3000"
     volumes:
-      - ./app:/react-app-2
-    command: ["sh", "-c", "npm install -g create-react-app && npx create-react-app . && npm start"]
+      - ./app:/app
     stdin_open: true
     tty: true
     environment:
