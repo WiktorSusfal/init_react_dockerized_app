@@ -6,7 +6,7 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - ./react-app:/react-app-2
+      - ./app:/react-app-2
     command: ["sh", "-c", "npm install -g create-react-app && npx create-react-app . && npm start"]
     stdin_open: true
     tty: true
