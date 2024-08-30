@@ -2,6 +2,7 @@
 
 .vscode/
 /react-app/*
+!/react-app/
 
 # dependencies
 **/node_modules
